@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: getting-started-app-deployment
+  labels:
+    app: getting-started-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: getting-started-app
+  template:
+    metadata:
+      labels:
+        app: getting-started-app
+    spec:
+      containers:
+      - name: getting-started-app
+        image: ankitkumar0987/getting-started-todo
+        ports:
+        - containerPort: 3000
+
