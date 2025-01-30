@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: getting-started-app
-        image: ankitkumar0987/getting-started-todo
+        image: ankitkumar0987/getting-started-todo:latest
         ports:
         - containerPort: 3000
 
